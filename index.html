@@ -1,22 +1,249 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 <!DOCTYPE html>
-<html lang="en" class="html1">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/index.js" defer></script>
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .html1 {
+            background: radial-gradient(rgb(222, 9, 165), rgb(35, 18, 160));
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .img1 {
+            height: 300px;
+            width: 1450px;
+            display: flex;
+            justify-content: center;
+        }
+        .hh {
+            font-size: 33px;
+            font-weight: 200px;
+            display: flex;
+            flex-grow: 1;
+            color: aliceblue;
+        }
+        .p2p {
+            color: aliceblue;
+            font-size: 23px;
+            width: 800px;
+            margin: 10px;
+        }
+        .t1 {
+            vertical-align: middle;
+            display: flex;
+            justify-content: space-between;
+        }
+        .bu1 {
+            padding: 5px 5px 5px 5px;
+            border-bottom: 1px double rgb(25, 142, 31);
+            border-radius: 20px;
+            font-size: 26px;
+            margin-top: 15px;
+            background-color: rgba(48, 160, 57, 0.908);
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(36, 181, 86);
+        }
+        button:active {
+            background-color: rgb(39, 202, 66);
+        }
+        .p1p {
+            font-size: 23px;
+        }
+        .plaska {
+            display: flex;
+            justify-content: space-evenly;
+            color: rgb(224, 226, 227);
+        }
+        .video {
+            flex-basis: 200px;
+            text-align: right;
+            margin: 10px 200px 10px auto;
+        }
+        .imgaa {
+            width: 500px;
+            height: 300px;
+            border-radius: 20px;
+        }
+        .card {
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            width: 300px;
+            border: 1px solid rgb(8, 135, 19);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 20px;
+            font-family: Helvetica;
+        }
+        .save {
+            background-color: rgba(37, 160, 92, 0.93);
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px 10px 20px;
+            border: none;
+            border-radius: 20px;
+            margin-top: 8px;
+        }
+        .photo {
+            border-radius: 20px;
+            width: 300px;
+        }
+        .text {
+            margin: 10px 0px 10px 0px;
+            font-size: 18px;
+        }
+        .kartinki {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .cen {
+            text-align: center;
+            font-size: 25px;
+            color: aliceblue;
+        }
+        .plan1 {
+            color: aliceblue;
+            margin-left: 70px;
+        }
+        p {
+            font-size: 19px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+        .plan2 {
+            color: aliceblue;
+            margin-left: 1100px;
+        }
+        .mini {
+            width: 30px;
+            height: 30px;
+        }
+        .chto1 {
+            display: inline-block;
+            width: 1400px;
+            height: 300px;
+        }
+        .sp {
+            font-size: 50px;
+            color: aliceblue;
+        }
+        .bu2 {
+            padding: 5px 12px 5px 12px;
+            border-bottom: 1px double rgb(25, 142, 31);
+            border-radius: 20px;
+            font-size: 25px;
+            margin-top: 15px;
+            background-color: rgba(19, 85, 24, 0.908);
+            color: aliceblue;
+        }
+        .yes {
+            color: aliceblue;
+            font-size: 28px;
+        }
+        footer {
+            background-color: rgb(118, 113, 130);
+        }
+        .rek {
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+        }
+        .k {
+            font-size: 32px;
+            color: rgb(0, 0, 0);
+        }
+        @media (max-width: 375px) {
+            .kartinki .img1 {
+                flex-wrap: wrap;
+            }
+            .card .img1 {
+                flex-basis: 100%;
+            }
+            .img1 {
+                height: 200px;
+                width: 300px;
+            }
+        }
+        .swiper-lazy {
+            width: auto;
+            height: auto;
+            position: absolute;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .swiper-slide {
+            text-align: 100%;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            width: 58%;
+            object-fit: cover;
+        }
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            right: 140px !important;
+            left: auto;
+        }
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-prev {
+            left: 140px !important;
+            right: auto;
+        }
+        .imgsl {
+            height: 500px;
+            width: 1300px;
+        }
+        .slider li.active {
+            opacity: 1;
+        }
+        .slider .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 18px;
+            padding: 10px;
+            text-align: center;
+        }
+        body {
+            padding: 50px;
+            font-family: sans-serif;
+        }
+        .wheel {
+            transition: 1s;
+        }
+        .deg1 {
+            rotate: 90deg;
+        }
+        .deg2 {
+            rotate: 180deg;
+        }
+        .deg3 {
+            rotate: 270deg;
+        }
+        .deg4 {
+            rotate: 360deg;
+        }
+        #health {
+            color: rgb(196, 15, 15);
+        }
+    </style>
 </head>
-
-<body>
+<body class="html1">
     <header>
         <div class="plaska">
             <p class="p1p">Другие туры </p>
@@ -24,7 +251,6 @@
             <p class="p1p">Контакты</p>
             <p class="p1p">Часто задаваемые вопросы</p>
         </div>
-
         <hr>
         <img class="img1" src="mountains.jpg">
         <hr>
@@ -33,7 +259,7 @@
                 <h2 class="hh">О НАС</h2>
                 <p class="p2p">Mountain trip - молодая компания по организации туров по России. Наша команда тщательно
                     организовывает маршруты и внимательно относится к каждому клиенту.</p>
-                <p class="p2p">Каждый год мы приносим что-то новое в наш сервис,стараясь сделать поездку незабываемой.
+                <p class="p2p">Каждый год мы приносим что-то новое в наш сервис, стараясь сделать поездку незабываемой.
                 </p>
                 <button class="bu1"
                     onclick="javascript:location.href= 'https://youtu.be/lyh2kAjcmSY?si=3POgWNJohY0DqPMq';"
@@ -90,7 +316,6 @@
         </section>
         <hr>
         <section>
-            
             <section>
                 <div class="swiper Myswiper">
                     <div class="swiper-wrapper">
@@ -99,39 +324,29 @@
                         <div class="swiper-slide"><img src="горы слайдер3.jpg" alt="3"></div>
                     </div>
                 </div>
-
                 <div class="swiper-pagination"></div>
-
             </section>
-           
-
-
-
-
-
-
-
         </section>
         <hr>
         <section>
-            <h2 class="cen">ПЛАН ПУТЕШЕСТВИЯ</h3>
-                <div class="plan1">
-                    <h3><img class="mini" src="m.png"> 1.Знакомство с командой</h3>
-                    <p>Первый день - пребытие в отель,тимбилдинг и отдых</p>
-                </div>
-                <div class="plan2">
-                    <h3><img class="mini" src="m.png">2.Экскурсия по городу</h3>
-                    <p>Второй день: смотрим достопримечательности,знакомимся с национальной кухней</p>
-                </div>
-                <div class="plan1">
-                    <h3><img class="mini" src="m.png">3.В горы с палаткой</h3>
-                    <p>Третий-седьмой дни: собираем снаряжение,идем в горы,ночуем под открытым небом </p>
-                </div>
-                <div class="plan2">
-                    <h3><img class="mini" src="m.png">4.Возвращение и вечеринка</h3>
-                    <p>Седьмой-десятый дни: спускаемся с гор,отсыпаемся, посещаем спа и устраиваем прощальную вечеринку
-                    </p>
-                </div>
+            <h2 class="cen">ПЛАН ПУТЕШЕСТВИЯ</h2>
+            <div class="plan1">
+                <h3><img class="mini" src="m.png"> 1.Знакомство с командой</h3>
+                <p>Первый день - пребытие в отель, тимбилдинг и отдых</p>
+            </div>
+            <div class="plan2">
+                <h3><img class="mini" src="m.png">2.Экскурсия по городу</h3>
+                <p>Второй день: смотрим достопримечательности, знакомимся с национальной кухней</p>
+            </div>
+            <div class="plan1">
+                <h3><img class="mini" src="m.png">3.В горы с палаткой</h3>
+                <p>Третий-седьмой дни: собираем снаряжение, идем в горы, ночуем под открытым небом </p>
+            </div>
+            <div class="plan2">
+                <h3><img class="mini" src="m.png">4.Возвращение и вечеринка</h3>
+                <p>Седьмой-десятый дни: спускаемся с гор, отсыпаемся, посещаем спа и устраиваем прощальную вечеринку
+                </p>
+            </div>
         </section>
         <hr>
         <section>
@@ -155,12 +370,77 @@
         <hr>
         <div id="dragon">
             <img class="wheel" src="dragon.png" alt="" id="enemy" />
-          </div>
-          <p id="health">
+        </div>
+        <p id="health">
             Говорят, если победить дракона, то он станет твоим вечным другом.
             Попробуем?
-          </p>
+        </p>
     </footer>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        let yesNode = document.querySelector(`.yes`);
+        let bu2Node = document.querySelector(`.bu2`);
+        bu2Node.addEventListener('click', function () {
+            yesNode.innerHTML = `Успешно`;
+        });
 
+        let counter = 0;
+        let wheel = document.getElementById("wheel");
+        wheel.addEventListener("click", function () {
+            counter += 1;
+            if (counter == 1) {
+                wheel.classList.add(`deg1`);
+            } else if (counter == 2) {
+                wheel.classList.add(`deg2`);
+                wheel.classList.remove(`deg1`);
+            } else if (counter == 3) {
+                wheel.classList.add(`deg3`);
+                wheel.classList.remove(`deg2`);
+            } else if (counter == 4) {
+                wheel.classList.add(`deg4`);
+                wheel.classList.remove(`deg3`);
+            } else {
+                counter = 0;
+                wheel.classList.remove(`deg4`);
+            }
+        });
+
+        const swiper = new Swiper('.Myswiper', {
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: {
+                delay: 2000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        let enemyNode = document.querySelector(`#enemy`);
+        let dragonNode = document.querySelector(`#dragon`);
+        let healthNode = document.querySelector(`#health`);
+        let health = 50;
+        let count = 0;
+        enemyNode.addEventListener(`click`, function () {
+            count += 1;
+            if (count == 1) {
+                health -= 1;
+            } else if (count == 2) {
+                health -= 3;
+            } else if (count == 3) {
+                health -= 10;
+                count = 0;
+            }
+            healthNode.innerHTML = `Здоровье ` + health;
+            if (health <= 0) {
+                healthNode.innerHTML = `ПОБЕДА! `;
+                dragonNode.innerHTML = '<img src="dragon-fruit.png"/>';
+            }
+        });
+    </script>
+</body>
 </html>
